@@ -1,0 +1,36 @@
+// Common
+$font-main: 'Roboto', sans-serif;
+$font-color-main: #cacaca;
+$background-color-main: #08020d;
+
+// h1
+%font-settings-h1 {
+  $font-size-h1: 60px;
+  $line-height-h1: 90px;
+  $font-weight-h1: bold;
+  $text-transform-h1: uppercase;
+}
+
+// h2
+%font-settings-h2 {
+  $font-size-h1: 38px;
+  $line-height-h1: 57px;
+  $font-weight-h1: bold;
+  $text-transform-h1: uppercase;
+}
+
+// h1
+%font-settings-h1-mobile {
+  $font-size-h1: 30px;
+  $line-height-h1: 45px;
+  $font-weight-h1: bold;
+  $text-transform-h1: uppercase;
+}
+
+// h2
+%font-settings-h2-mobile {
+  $font-size-h1: 18px;
+  $line-height-h1: 27px;
+  $font-weight-h1: bold;
+  $text-transform-h1: uppercase;
+}
