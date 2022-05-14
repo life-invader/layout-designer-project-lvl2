@@ -1,0 +1,24 @@
+.access-form {
+  max-width: 570px;
+  display: grid;
+  column-gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+
+  &__input {
+    padding: 16px 22px;
+    border: 1px solid #CACACA;
+    border-radius: 3px;
+  }
+
+  &__submit {
+    grid-column: span 2;
+    display: block;
+    width: 100%;
+    margin-top: 24px;
+    padding: 21px;
+    color: #fff;
+    background-color: #34C176;
+    border-radius: 5px;
+    text-transform: uppercase;
+  }
+}

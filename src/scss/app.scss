@@ -1,0 +1,9 @@
+@import 'variables';
+@import 'general';
+
+// Components
+@import './components/header/header';
+@import './components/menu/menu';
+@import './components/banner/banner';
+@import './components/title/title';
+@import './components/access-form/access-form.scss';

@@ -5,18 +5,14 @@ $background-color-main: #08020d;
 
 // h1
 %font-settings-h1 {
-  $font-size-h1: 60px;
-  $line-height-h1: 90px;
-  $font-weight-h1: bold;
-  $text-transform-h1: uppercase;
+  font-size: 60px;
+  line-height: 90px;
 }
 
 // h2
 %font-settings-h2 {
-  $font-size-h1: 38px;
-  $line-height-h1: 57px;
-  $font-weight-h1: bold;
-  $text-transform-h1: uppercase;
+  font-size: 38px;
+  line-height: 57px;
 }
 
 // h1

@@ -1,0 +1,159 @@
+.title--big {
+  font-size: 60px;
+  line-height: 90px;
+}
+
+.title--medium {
+  font-size: 38px;
+  line-height: 57px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+.container {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.header {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  right: 0;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.menu__link {
+  padding: 5px;
+  margin: 0 7px;
+  color: #CACACA;
+  transition: color 0.2s;
+}
+.menu__link:hover {
+  color: #fff;
+}
+.menu__link--active {
+  color: #fff;
+}
+.menu__list {
+  display: flex;
+  margin-left: 90px;
+}
+.menu__logo {
+  flex-shrink: 0;
+}
+.menu__logo-img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+.menu__logo-text {
+  margin-left: 16px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.menu__search {
+  margin-left: auto;
+  padding: 5px 10px;
+  border-radius: 50px;
+  width: 248px;
+  background-color: #3C3B3D;
+  color: #CACACA;
+}
+.menu__search::placeholder {
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  color: #757575;
+}
+
+.banner {
+  padding: 200px 0;
+  background-image: url("../../../images/banner.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+.banner__text {
+  margin-top: 31px;
+}
+.banner__form {
+  margin: 0 auto;
+  margin-top: 17px;
+}
+
+.title--big {
+  font-size: 60px;
+  line-height: 90px;
+}
+
+.title--medium {
+  font-size: 38px;
+  line-height: 57px;
+}
+
+.title {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+.access-form {
+  max-width: 570px;
+  display: grid;
+  column-gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.access-form__input {
+  padding: 16px 22px;
+  border: 1px solid #CACACA;
+  border-radius: 3px;
+}
+.access-form__submit {
+  grid-column: span 2;
+  display: block;
+  width: 100%;
+  margin-top: 24px;
+  padding: 21px;
+  color: #fff;
+  background-color: #34C176;
+  border-radius: 5px;
+  text-transform: uppercase;
+}

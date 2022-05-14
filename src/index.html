@@ -8,12 +8,56 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/app.css">
   <title>Music Box life-invader</title>
 </head>
 
 <body>
-  <header>header</header>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <nav class="menu header__menu">
+
+        <a class="menu__logo" href="#">
+          <img class="menu__logo-img" src="images/logo.svg" alt="Music Box">
+          <span class="menu__logo-text">Music Box</span>
+        </a>
+
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a class="menu__link menu__link--active" href="#">Главная</a>
+          </li>
+
+          <li class="menu__list-item">
+            <a class="menu__link" href="#">Каталог</a>
+          </li>
+
+          <li class="menu__list-item">
+            <a class="menu__link" href="#">Исполнители</a>
+          </li>
+
+          <li class="menu__list-item">
+            <a class="menu__link" href="#">Контакты</a>
+          </li>
+        </ul>
+
+        <input class="menu__search" type="text" placeholder="Поиск...">
+
+      </nav>
+    </div>
+  </header>
+
+  <section class="banner" id="page-description">
+    <h1 class="title title--big">Онлайн музыка где угодно</h1>
+    <h2 class="title title--medium">без ограничений</h2>
+    <p class="banner__text">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
+    <form class="access-form banner__form">
+      <input class="access-form__input" type="text" placeholder="Имя">
+      <input class="access-form__input" type="email" placeholder="Email">
+      <button class="access-form__submit" type="submit">Получить доступ</button>
+    </form>
+  </section>
+
   <main>main</main>
   <footer>THIS IS FOOTER!!!</footer>
 </body>
