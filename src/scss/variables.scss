@@ -17,16 +17,16 @@ $background-color-main: #08020d;
 
 // h1
 %font-settings-h1-mobile {
-  $font-size-h1: 30px;
-  $line-height-h1: 45px;
-  $font-weight-h1: bold;
-  $text-transform-h1: uppercase;
+  @media (max-width: 576px) {
+    font-size: 30px;
+    line-height: 45px;
+  }
 }
 
 // h2
 %font-settings-h2-mobile {
-  $font-size-h1: 18px;
-  $line-height-h1: 27px;
-  $font-weight-h1: bold;
-  $text-transform-h1: uppercase;
+  @media (max-width: 576px) {
+    font-size: 18px;
+    line-height: 27px;
+  }
 }

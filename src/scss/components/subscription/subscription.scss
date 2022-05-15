@@ -1,0 +1,22 @@
+.subscription {
+
+  &__plans {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 45px;
+    column-gap: 48px;
+  }
+
+  &__footer {
+    margin-top: 40px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 414px) {
+  .subscription {
+    &__plans {
+      flex-direction: column;
+    }
+  }
+}

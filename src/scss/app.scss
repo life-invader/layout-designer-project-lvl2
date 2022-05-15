@@ -2,8 +2,11 @@
 @import 'general';
 
 // Components
+@import './components/section/section';
 @import './components/header/header';
 @import './components/menu/menu';
 @import './components/banner/banner';
 @import './components/title/title';
 @import './components/access-form/access-form.scss';
+@import './components/subscription/subscription';
+@import './components/subscription-card/subscription-card';

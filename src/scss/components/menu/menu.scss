@@ -52,11 +52,34 @@
     background-color: #3C3B3D;
     color: #CACACA;
 
-    &::placeholder{
+    &::placeholder {
       font-size: 13px;
       font-family: Arial, sans-serif;
       text-transform: uppercase;
       color: #757575;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__list {
+      flex-direction: column;
+      margin: 0;
+      margin-top: 17px;
+    }
+
+    &__link {
+      padding: 0;
+      margin: 0;
+    }
+
+    &__search {
+      width: 100%;
+      margin-top: 18px;
     }
   }
 }
