@@ -1,0 +1,9 @@
+.news {
+
+  &__wrapper {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 65px;
+  }
+}
