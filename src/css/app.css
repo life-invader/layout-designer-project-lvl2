@@ -363,3 +363,34 @@ body {
     margin-top: 16px;
   }
 }
+.mobile-app {
+  padding-bottom: 100px;
+}
+.mobile-app__wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 144px;
+  margin-top: 48px;
+}
+.mobile-app__content {
+  max-width: 600px;
+}
+.mobile-app__text {
+  color: #CACACA;
+  line-height: 24px;
+}
+.mobile-app__btn {
+  margin-top: 16px;
+  display: inline-block;
+  background-color: #95390C;
+  padding: 17px 40px;
+  border-radius: 32px;
+  font-size: 12px;
+  line-height: 19px;
+}
+
+@media (max-width: 414px) {
+  .mobile-app__wrapper {
+    flex-direction: column-reverse;
+  }
+}
