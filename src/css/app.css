@@ -508,3 +508,50 @@ body {
     flex-basis: auto;
   }
 }
+.popular-tracks {
+  overflow: hidden;
+}
+.popular-tracks__wrapper {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px 49px;
+}
+.popular-tracks__item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.popular-tracks__item:hover {
+  background-color: #372e8a;
+  box-shadow: 0 0 10px 10px #372e8a;
+}
+.popular-tracks__item-img {
+  width: 55px;
+  height: auto;
+  margin-right: 15px;
+}
+.popular-tracks__item-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+.popular-tracks__item-song {
+  font-size: 12px;
+  line-height: 19px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.popular-tracks__item-artist {
+  font-size: 12px;
+  line-height: 19px;
+  color: #E0E0E0;
+}
+.popular-tracks__item-duration {
+  font-size: 12px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #E0E0E0;
+}
