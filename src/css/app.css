@@ -143,21 +143,71 @@ body {
     margin-top: 18px;
   }
 }
-.banner {
+.banner-main {
   padding: 200px 0;
   background-image: url("../../../images/banner.png");
   background-size: cover;
   background-position: center;
   text-align: center;
+  min-height: 100vh;
 }
-.banner__text {
+.banner-main__text {
   margin-top: 31px;
 }
-.banner__form {
+.banner-main__form {
   margin: 0 auto;
   margin-top: 17px;
 }
 
+.banner-artist {
+  padding: 250px 0;
+  background-image: url("../../../images/Morten Harket.png");
+  background-size: cover;
+  background-position: center;
+  text-align: left;
+  min-height: 100vh;
+}
+.banner-artist__btn-list {
+  margin-top: 48px;
+  display: flex;
+  gap: 24px;
+}
+.banner-artist__btn {
+  padding: 21px 31px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 200px;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+.banner-artist__btn--mix {
+  background-color: #5328A1;
+}
+.banner-artist__btn--fav {
+  background-color: #95390C;
+}
+.banner-artist__btn--mix::before, .banner-artist__btn--fav::before {
+  display: inline-block;
+  margin-right: 16px;
+}
+.banner-artist__btn--mix::before {
+  content: url(../images/play-button.svg);
+  width: 20px;
+  height: 20px;
+}
+.banner-artist__btn--fav::before {
+  content: url(../images/heart.svg);
+  width: 20px;
+  height: 18px;
+}
+
+@media (max-width: 414px) {
+  .banner-artist__btn-list {
+    flex-direction: column;
+  }
+}
 .title--big {
   font-size: 60px;
   line-height: 90px;
@@ -187,6 +237,10 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
+.title--left {
+  text-align: left;
+}
+
 .access-form {
   max-width: 570px;
   min-width: 270px;

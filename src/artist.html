@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/app.css">
   <title>Music Box life-invader</title>
 </head>
+
 <body>
-  
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <nav class="menu header__menu">
+
+        <a class="menu__logo" href="#">
+          <img class="menu__logo-img" src="images/logo.svg" alt="Music Box">
+          <span class="menu__logo-text">Music Box</span>
+        </a>
+
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a class="menu__link" href="index.html">Главная</a>
+          </li>
+
+          <li class="menu__list-item">
+            <a class="menu__link" href="#">Каталог</a>
+          </li>
+
+          <li class="menu__list-item">
+            <a class="menu__link menu__link--active" href="artist.html">Исполнители</a>
+          </li>
+
+          <li class="menu__list-item">
+            <a class="menu__link" href="#">Контакты</a>
+          </li>
+        </ul>
+
+        <input class="menu__search" type="text" placeholder="Поиск...">
+
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="banner-artist" id="page-description">
+      <div class="container">
+        <h1 class="title title--big title--left">Morten Harket</h1>
+        <p class="banner-artist__followers">24 875 поклонников</p>
+        <div class="banner-artist__btn-list">
+          <a class="banner-artist__btn banner-artist__btn--mix" href="#">МИКС</a>
+          <a class="banner-artist__btn banner-artist__btn--fav" href="#">В ИЗБРАННОЕ</a>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
+
 </html>

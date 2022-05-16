@@ -14,4 +14,8 @@
     @extend %font-settings-h2;
     @extend %font-settings-h2-mobile
   }
+
+  &--left {
+    text-align: left;
+  }
 }
