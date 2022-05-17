@@ -1,0 +1,18 @@
+.discography-item {
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__album {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 700;
+    margin-top: 16px;
+  }
+
+  &__released {
+    line-height: 24px;
+  }
+}

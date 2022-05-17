@@ -1,7 +1,6 @@
 .subscription-card {
   padding: 24px 24px 64px;
   max-width: 368px;
-  background-image: url('../../../images/subscribe_1.png');
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -40,6 +39,18 @@
     margin-top: 64px;
     font-size: 12px;
     line-height: 19px;
+  }
+
+  &--free {
+    background-image: url('../../../images/subscribe_1.png');
+  }
+  
+  &--standard {
+    background-image: url('../../../images/subscribe_2.png');
+  }
+
+  &--premium {
+    background-image: url('../../../images/subscribe_3.png');
   }
 }
 

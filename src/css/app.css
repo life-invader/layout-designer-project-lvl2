@@ -303,7 +303,6 @@ body {
 .subscription-card {
   padding: 24px 24px 64px;
   max-width: 368px;
-  background-image: url("../../../images/subscribe_1.png");
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -336,6 +335,15 @@ body {
   margin-top: 64px;
   font-size: 12px;
   line-height: 19px;
+}
+.subscription-card--free {
+  background-image: url("../../../images/subscribe_1.png");
+}
+.subscription-card--standard {
+  background-image: url("../../../images/subscribe_2.png");
+}
+.subscription-card--premium {
+  background-image: url("../../../images/subscribe_3.png");
 }
 
 @media (max-width: 414px) {
@@ -524,8 +532,8 @@ body {
   transition: background-color 0.3s, box-shadow 0.3s;
 }
 .popular-tracks__item:hover {
-  background-color: #372e8a;
-  box-shadow: 0 0 10px 10px #372e8a;
+  background-color: #5328a1;
+  box-shadow: 0 0 10px 10px #5328a1;
 }
 .popular-tracks__item-img {
   width: 55px;
@@ -554,4 +562,35 @@ body {
   line-height: 19px;
   font-weight: 400;
   color: #E0E0E0;
+}
+
+@media (max-width: 414px) {
+  .popular-tracks__wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+.discography__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px 50px;
+  margin-top: 48px;
+}
+
+@media (max-width: 414px) {
+  .discography__list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.discography-item__img {
+  width: 100%;
+  height: auto;
+}
+.discography-item__album {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+  margin-top: 16px;
+}
+.discography-item__released {
+  line-height: 24px;
 }
