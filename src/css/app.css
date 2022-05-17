@@ -1,0 +1,631 @@
+.title--big {
+  font-size: 60px;
+  line-height: 90px;
+}
+
+.title--medium {
+  font-size: 38px;
+  line-height: 57px;
+}
+
+@media (max-width: 576px) {
+  .title--big {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
+@media (max-width: 576px) {
+  .title--medium {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+.container {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 100px;
+  background-color: #08020D;
+}
+
+.header {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  right: 0;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.menu__link {
+  padding: 5px;
+  margin: 0 7px;
+  color: #CACACA;
+  transition: color 0.2s;
+}
+.menu__link:hover {
+  color: #fff;
+}
+.menu__link--active {
+  color: #fff;
+}
+.menu__list {
+  display: flex;
+  margin-left: 90px;
+}
+.menu__logo {
+  flex-shrink: 0;
+}
+.menu__logo-img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+.menu__logo-text {
+  margin-left: 16px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.menu__search {
+  margin-left: auto;
+  padding: 5px 10px;
+  border-radius: 50px;
+  width: 248px;
+  background-color: #3C3B3D;
+  color: #CACACA;
+}
+.menu__search::placeholder {
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  color: #757575;
+}
+
+@media (max-width: 576px) {
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .menu__list {
+    flex-direction: column;
+    margin: 0;
+    margin-top: 17px;
+  }
+  .menu__link {
+    padding: 0;
+    margin: 0;
+  }
+  .menu__search {
+    width: 100%;
+    margin-top: 18px;
+  }
+}
+.banner-main {
+  padding: 200px 0;
+  background-image: url("../../../images/banner.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  min-height: 100vh;
+}
+.banner-main__text {
+  margin-top: 31px;
+}
+.banner-main__form {
+  margin: 0 auto;
+  margin-top: 17px;
+}
+
+.banner-artist {
+  padding: 250px 0;
+  background-image: url("../../../images/Morten Harket.png");
+  background-size: cover;
+  background-position: center;
+  text-align: left;
+  min-height: 100vh;
+}
+.banner-artist__btn-list {
+  margin-top: 48px;
+  display: flex;
+  gap: 24px;
+}
+.banner-artist__btn {
+  padding: 21px 31px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 200px;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+.banner-artist__btn--mix {
+  background-color: #5328A1;
+}
+.banner-artist__btn--fav {
+  background-color: #95390C;
+}
+.banner-artist__btn--mix::before, .banner-artist__btn--fav::before {
+  display: inline-block;
+  margin-right: 16px;
+}
+.banner-artist__btn--mix::before {
+  content: url(../images/play-button.svg);
+  width: 20px;
+  height: 20px;
+}
+.banner-artist__btn--fav::before {
+  content: url(../images/heart.svg);
+  width: 20px;
+  height: 18px;
+}
+
+@media (max-width: 414px) {
+  .banner-artist__btn-list {
+    flex-direction: column;
+  }
+}
+.title--big {
+  font-size: 60px;
+  line-height: 90px;
+}
+
+.title--medium {
+  font-size: 38px;
+  line-height: 57px;
+}
+
+@media (max-width: 576px) {
+  .title--big {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
+@media (max-width: 576px) {
+  .title--medium {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+.title {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+.title--left {
+  text-align: left;
+}
+
+.access-form {
+  max-width: 570px;
+  min-width: 270px;
+  display: grid;
+  column-gap: 24px;
+  row-gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.access-form__input {
+  color: #fff;
+  font-size: 14px;
+  font-family: inherit;
+  padding: 16px 22px;
+  border: 1px solid #CACACA;
+  border-radius: 3px;
+  background-color: transparent;
+}
+.access-form__input::placeholder {
+  color: #fff;
+}
+.access-form__submit {
+  grid-column: 1/-1;
+  display: block;
+  width: 100%;
+  padding: 21px;
+  color: #fff;
+  background-color: #34C176;
+  border-radius: 5px;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.access-form__submit:hover {
+  background-color: #319962;
+}
+
+@media (max-width: 576px) {
+  .access-form {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+}
+.subscription__plans {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 45px;
+  gap: 48px;
+}
+.subscription__footer {
+  margin-top: 40px;
+  text-align: center;
+}
+
+@media (max-width: 414px) {
+  .subscription__plans {
+    flex-direction: column;
+  }
+}
+.subscription-card {
+  padding: 24px 24px 64px;
+  max-width: 368px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+.subscription-card__price {
+  margin-top: 200px;
+}
+.subscription-card__title {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+}
+.subscription-card__price {
+  font-size: 64px;
+}
+.subscription-card__currency {
+  font-size: 32px;
+  margin-left: 16px;
+}
+.subscription-card__button {
+  padding: 21px;
+  margin-top: 40px;
+  display: block;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+.subscription-card__info {
+  margin-top: 64px;
+  font-size: 12px;
+  line-height: 19px;
+}
+.subscription-card--free {
+  background-image: url("../../../images/subscribe_1.png");
+}
+.subscription-card--standard {
+  background-image: url("../../../images/subscribe_2.png");
+}
+.subscription-card--premium {
+  background-image: url("../../../images/subscribe_3.png");
+}
+
+@media (max-width: 414px) {
+  .subscription-card {
+    max-width: 100%;
+  }
+}
+.news__wrapper {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 65px;
+}
+
+.news-card {
+  display: flex;
+  column-gap: 50px;
+}
+.news-card__img {
+  width: 100%;
+  max-width: 575px;
+  height: auto;
+  object-fit: cover;
+}
+.news-card__title {
+  font-size: 30px;
+  font-weight: 400;
+}
+.news-card__text {
+  color: #CACACA;
+  margin-top: 30px;
+}
+.news-card__footer {
+  margin-top: 25px;
+  align-items: center;
+}
+.news-card__author {
+  vertical-align: middle;
+}
+.news-card__company {
+  margin: 0 16px;
+  color: #F89202;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.news-card__date {
+  color: #CACACA;
+  font-size: 12px;
+}
+.news-card__btn {
+  margin-top: 48px;
+  display: inline-block;
+  text-align: center;
+  max-width: 135px;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 16px;
+  border: 1px solid #CACACA;
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 19px;
+  font-weight: 400;
+}
+.news-card--reverse {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 414px) {
+  .news-card {
+    flex-direction: column;
+  }
+  .news-card__content {
+    margin-top: 50px;
+  }
+  .news-card__title {
+    font-size: 16px;
+  }
+  .news-card__text {
+    margin-top: 16px;
+  }
+}
+.mobile-app {
+  padding-bottom: 100px;
+}
+.mobile-app__wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 144px;
+  margin-top: 48px;
+}
+.mobile-app__content {
+  max-width: 600px;
+}
+.mobile-app__text {
+  color: #CACACA;
+  line-height: 24px;
+}
+.mobile-app__btn {
+  margin-top: 16px;
+  display: inline-block;
+  background-color: #95390C;
+  padding: 17px 40px;
+  border-radius: 32px;
+  font-size: 12px;
+  line-height: 19px;
+}
+
+@media (max-width: 414px) {
+  .mobile-app__wrapper {
+    flex-direction: column-reverse;
+  }
+}
+.footer {
+  background-image: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+}
+.footer__top {
+  display: flex;
+  column-gap: 40px;
+  padding: 62px 0 72px;
+}
+.footer__item {
+  flex-basis: 270px;
+}
+.footer__item-title {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+}
+.footer__menu {
+  margin-top: 15px;
+}
+.footer__menu-link {
+  color: #E0E0E0;
+  line-height: 24px;
+}
+.footer__social-menu {
+  margin-top: 15px;
+  display: flex;
+}
+.footer__social-menu-item + .footer__social-menu-item {
+  margin-left: 20px;
+}
+.footer__bottom {
+  padding: 40px 0 49px;
+  position: relative;
+}
+.footer__bottom-menu {
+  display: flex;
+  gap: 16px;
+}
+.footer__bottom::before {
+  content: "";
+  top: 0;
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: #CACACA;
+}
+
+@media (max-width: 576px) {
+  .footer__top {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .footer__bottom-menu {
+    flex-direction: column;
+  }
+  .footer__item {
+    flex-basis: auto;
+  }
+}
+.popular-tracks {
+  overflow: hidden;
+}
+.popular-tracks__wrapper {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px 49px;
+}
+.popular-tracks__item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.popular-tracks__item:hover {
+  background-color: #5328a1;
+  box-shadow: 0 0 10px 10px #5328a1;
+}
+.popular-tracks__item-img {
+  width: 55px;
+  height: auto;
+  margin-right: 15px;
+}
+.popular-tracks__item-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+.popular-tracks__item-song {
+  font-size: 12px;
+  line-height: 19px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.popular-tracks__item-artist {
+  font-size: 12px;
+  line-height: 19px;
+  color: #E0E0E0;
+}
+.popular-tracks__item-duration {
+  font-size: 12px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #E0E0E0;
+}
+
+@media (max-width: 414px) {
+  .popular-tracks__wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+.discography__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px 50px;
+  margin-top: 48px;
+}
+
+@media (max-width: 414px) {
+  .discography__list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.discography-item {
+  cursor: pointer;
+}
+.discography-item__img {
+  width: 100%;
+  height: auto;
+}
+.discography-item__album {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+  margin-top: 16px;
+}
+.discography-item__released {
+  line-height: 24px;
+}
+
+.similar-artists {
+  padding-bottom: 100px;
+}
+.similar-artists__list {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px 50px;
+}
+
+@media (max-width: 414px) {
+  .similar-artists__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.artist-card {
+  text-align: center;
+  cursor: pointer;
+}
+.artist-card__img {
+  width: 100%;
+}
+.artist-card__artist {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+  margin-top: 17px;
+}
+.artist-card__followers {
+  line-height: 24px;
+}
