@@ -1,19 +1,19 @@
-.discography-item {
+.artist-card {
+  text-align: center;
   cursor: pointer;
 
   &__img {
     width: 100%;
-    height: auto;
   }
 
-  &__album {
+  &__artist {
     font-size: 18px;
     line-height: 27px;
     font-weight: 700;
-    margin-top: 16px;
+    margin-top: 17px;
   }
 
-  &__released {
+  &__followers {
     line-height: 24px;
   }
 }
