@@ -21,6 +21,13 @@
     text-transform: uppercase;
     display: flex;
     align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+
+    &:hover::before {
+      transform: translateX(0%);
+    }
   }
 
   &__btn--mix {
@@ -33,21 +40,26 @@
 
   &__btn--mix::before,
   &__btn--fav::before {
-    display: inline-block;
-    margin-right: 16px;
-
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   &__btn--mix::before {
-    content: url(../images/play-button.svg);
-    width: 20px;
-    height: 20px;
+    background-image: url(../images/play-button.svg);
+    background-size: 20px;
   }
 
   &__btn--fav::before {
-    content: url(../images/heart.svg);
-    width: 20px;
-    height: 18px;
+    background-image: url(../images/heart.svg);
+    background-size: 20px 18px;
   }
 }
 

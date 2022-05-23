@@ -25,6 +25,11 @@
     border-radius: 32px;
     font-size: 12px;
     line-height: 19px;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }
 

@@ -31,8 +31,15 @@
     display: block;
     border: 1px solid #fff;
     border-radius: 5px;
-
     text-transform: uppercase;
+
+    outline: 1px solid #fff;
+    outline-offset: -1px;
+    transition: outline-offset 0.3s;
+
+    &:hover {
+      outline-offset: -10px;
+    }
   }
 
   &__info {
@@ -44,7 +51,7 @@
   &--free {
     background-image: url('../../../images/subscribe_1.png');
   }
-  
+
   &--standard {
     background-image: url('../../../images/subscribe_2.png');
   }

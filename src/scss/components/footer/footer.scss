@@ -25,6 +25,11 @@
   &__menu-link {
     color: #E0E0E0;
     line-height: 24px;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
 
   &__social-menu {
@@ -44,6 +49,14 @@
   &__bottom-menu {
     display: flex;
     gap: 16px;
+  }
+
+  &__bottom-link {
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
 
   &__bottom::before {
